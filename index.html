@@ -1,1092 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prasiddha Mainali | AI & Data Science Enthusiast</title>
-    <meta name="description" content="Prasiddha Mainali - Nepali high school student specializing in AI, Machine Learning and Entrepreneurship. Founder, AI Olympiad aspirant, and tech innovator.">
-    <meta name="keywords" content="Prasiddha Mainali, Nepali student, AI enthusiast, Machine Learning, Data Science, NOAI, IOAI, St. Xavier's College, Kathmandu, Nepal">
-    <meta name="author" content="Prasiddha Mainali">
-    <link rel="canonical" href="https://prasiddhamainali.com">
-    <meta name="google-site-verification" content="axMif5SrsNnCrsWm7ZrXDj8JJwb4KEdpMEuVw_jC-74" />
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Prasiddha Mainali | AI & Data Science Enthusiast">
-    <meta property="og:description" content="Nepali high school student specializing in AI, Machine Learning and Entrepreneurship.">
-    <meta property="og:image" content="https://prasiddhamainali.com/images/social-preview.jpg">
-    <meta property="og:url" content="https://prasiddhamainali.com">
-    <meta property="og:type" content="website">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        :root {
-            --primary: #3b82f6;
-            --primary-dark: #2563eb;
-            --secondary: #10b981;
-            --dark: #1e293b;
-            --light: #f8fafc;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
-            overflow-x: hidden;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .nav-link {
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: var(--primary);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: var(--primary);
-            left: -37px;
-            top: 5px;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            width: 2px;
-            height: 100%;
-            background: #e2e8f0;
-            left: -30px;
-            top: 0;
-        }
-        
-        .skill-bar {
-            height: 8px;
-            border-radius: 4px;
-            background: #e2e8f0;
-            overflow: hidden;
-        }
-        
-        .skill-progress {
-            height: 100%;
-            border-radius: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            transition: width 1.5s ease;
-        }
-        
-        .floating {
-            animation: floating 3s ease-in-out infinite;
-        }
-        
-        @keyframes floating {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        .blob {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            filter: blur(60px);
-            opacity: 0.2;
-            z-index: -1;
-        }
-        
-        .blob-1 {
-            background: var(--primary);
-            top: -100px;
-            right: -100px;
-        }
-        
-        .blob-2 {
-            background: var(--secondary);
-            bottom: -100px;
-            left: -100px;
-        }
-    </style>
-    
+<meta charset="UTF-8" />
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Prasiddha Mainali — AI & ML</title>
+<meta name="description" content="Prasiddha Mainali — AI & ML practitioner, NOAI Rank 6, hackathon winner, research award recipient. CS student at St. Xavier's College, Kathmandu."/>
+<meta name="keywords" content="Prasiddha Mainali, AI, Machine Learning, Nepal, NOAI, Deep Learning, Kathmandu"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#09090f;
+  --surface:#0f0f1a;
+  --surface2:#14141f;
+  --border:#1e1e2e;
+  --accent:#6c63ff;
+  --accent2:#00d4aa;
+  --text:#e8e8f0;
+  --muted:#6b6b80;
+  --muted2:#9494a8;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden;font-size:16px;line-height:1.6}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2.5rem;display:flex;justify-content:space-between;align-items:center;background:rgba(9,9,15,0.85);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:-0.02em;color:var(--text)}
+.nav-logo span{color:var(--accent)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted2);text-decoration:none;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;font-family:'DM Mono',monospace;transition:color 0.2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:var(--accent);color:#fff;padding:0.5rem 1.2rem;border-radius:6px;font-size:0.82rem;text-decoration:none;font-weight:500;transition:opacity 0.2s}
+.nav-cta:hover{opacity:0.85}
+.hero {
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-photo {
+  position: relative;
+  flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+  order: 2;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+  filter: grayscale(15%);
+  transition: filter 0.3s;
+}
+
+.hero-photo img:hover {
+  filter: grayscale(0%);
+}
+
+.hero-photo-ring {
+  position: absolute;
+  inset: -8px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  z-index: 0;
+  opacity: 0.25;
+}
+
+@media (max-width: 768px) {
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+    order: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;padding:0 2.5rem;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px;opacity:0.3}
+.hero-glow{position:absolute;top:-10%;left:-10%;width:60%;height:60%;background:radial-gradient(circle,rgba(108,99,255,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-glow2{position:absolute;bottom:-10%;right:-5%;width:40%;height:50%;background:radial-gradient(circle,rgba(0,212,170,0.08) 0%,transparent 70%)}
+.hero-content{position:relative;max-width:700px}
+.hero-tag{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(108,99,255,0.1);border:1px solid rgba(108,99,255,0.3);border-radius:100px;padding:0.35rem 1rem;font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--accent);margin-bottom:2rem;letter-spacing:0.05em}
+.hero-tag::before{content:'';width:6px;height:6px;background:var(--accent2);border-radius:50%;display:inline-block}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:800;line-height:1.05;letter-spacing:-0.04em;margin-bottom:1.5rem}
+.hero h1 .line2{color:var(--muted)}
+.hero-desc{font-size:1.1rem;color:var(--muted2);max-width:500px;line-height:1.7;margin-bottom:2.5rem}
+.hero-stats{display:flex;gap:2.5rem;margin-bottom:2.5rem}
+.stat-item{display:flex;flex-direction:column}
+.stat-num{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;letter-spacing:-0.03em}
+.stat-num.accent{color:var(--accent)}
+.stat-num.accent2{color:var(--accent2)}
+.stat-label{font-size:0.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-family:'DM Mono',monospace}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--accent);color:#fff;padding:0.8rem 1.8rem;border-radius:8px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:all 0.2s;display:inline-flex;align-items:center;gap:0.5rem}
+.btn-primary:hover{opacity:0.85;transform:translateY(-1px)}
+.btn-secondary{border:1px solid var(--border);color:var(--text);padding:0.8rem 1.8rem;border-radius:8px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:all 0.2s;background:var(--surface)}
+.btn-secondary:hover{border-color:var(--muted2);transform:translateY(-1px)}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;color:var(--muted);font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--muted),transparent)}
+
+/* SECTIONS */
+section{padding:6rem 2.5rem;max-width:1100px;margin:0 auto}
+.section-label{font-family:'DM Mono',monospace;font-size:0.75rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:0.75rem}
+.section-title{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;letter-spacing:-0.03em;line-height:1.1;margin-bottom:1rem}
+.section-sub{color:var(--muted2);font-size:1rem;max-width:480px;margin-bottom:3rem}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.about-text p{color:var(--muted2);line-height:1.8;margin-bottom:1rem}
+.about-text p strong{color:var(--text)}
+.about-chips{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.5rem}
+.chip{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:0.35rem 0.85rem;font-size:0.8rem;color:var(--muted2);font-family:'DM Mono',monospace}
+.about-facts{display:flex;flex-direction:column;gap:1rem}
+.fact-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.2rem 1.4rem;display:flex;align-items:flex-start;gap:1rem}
+.fact-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+.fact-icon.purple{background:rgba(108,99,255,0.15)}
+.fact-icon.teal{background:rgba(0,212,170,0.1)}
+.fact-icon.amber{background:rgba(250,180,50,0.1)}
+.fact-icon.pink{background:rgba(255,100,150,0.1)}
+.fact-label{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-family:'DM Mono',monospace;margin-bottom:0.2rem}
+.fact-value{font-size:0.9rem;color:var(--text);font-weight:500}
+
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.project-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.8rem;position:relative;overflow:hidden;transition:border-color 0.25s,transform 0.25s;cursor:pointer}
+.project-card:hover{border-color:rgba(108,99,255,0.4);transform:translateY(-3px)}
+.project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));opacity:0;transition:opacity 0.25s}
+.project-card:hover::before{opacity:1}
+.project-num{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted);margin-bottom:0.75rem}
+.project-title{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:700;margin-bottom:0.6rem;letter-spacing:-0.02em}
+.project-desc{font-size:0.88rem;color:var(--muted2);line-height:1.65;margin-bottom:1.2rem}
+.project-stack{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.2rem}
+.stack-tag{background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.2);border-radius:4px;padding:0.2rem 0.6rem;font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--accent)}
+.project-links{display:flex;gap:0.75rem}
+.project-link{font-size:0.8rem;color:var(--muted2);text-decoration:none;font-family:'DM Mono',monospace;display:flex;align-items:center;gap:0.3rem;transition:color 0.2s}
+.project-link:hover{color:var(--text)}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.skill-group{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.skill-group-title{font-family:'Syne',sans-serif;font-weight:700;font-size:0.9rem;margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem}
+.skill-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.skill-dot.purple{background:var(--accent)}
+.skill-dot.teal{background:var(--accent2)}
+.skill-dot.amber{background:#f4b942}
+.skill-dot.pink{background:#ff6496}
+.skill-list{display:flex;flex-direction:column;gap:0.5rem}
+.skill-item{font-size:0.85rem;color:var(--muted2);display:flex;align-items:center;gap:0.5rem}
+.skill-item::before{content:'';width:4px;height:4px;background:var(--border);border-radius:50%;flex-shrink:0}
+
+/* EXPERIENCE */
+.timeline{display:flex;flex-direction:column;gap:0;position:relative}
+.timeline::before{content:'';position:absolute;left:0;top:8px;bottom:0;width:1px;background:var(--border)}
+.timeline-item{padding-left:2rem;padding-bottom:2.5rem;position:relative}
+.timeline-item::before{content:'';position:absolute;left:-4px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--surface);border:2px solid var(--muted)}
+.timeline-item:first-child::before{background:var(--accent);border-color:var(--accent)}
+.timeline-date{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--accent);margin-bottom:0.3rem}
+.timeline-title{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;margin-bottom:0.2rem}
+.timeline-org{font-size:0.83rem;color:var(--muted2);margin-bottom:0.6rem}
+.timeline-desc{font-size:0.85rem;color:var(--muted2);line-height:1.65}
+.timeline-desc li{margin-bottom:0.3rem}
+.timeline-desc ul{padding-left:1.1rem}
+
+/* AWARDS */
+.awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.award-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.3rem;display:flex;align-items:flex-start;gap:1rem;transition:border-color 0.2s}
+.award-card:hover{border-color:rgba(244,185,66,0.3)}
+.award-medal{font-size:1.6rem;flex-shrink:0;line-height:1}
+.award-title{font-weight:600;font-size:0.9rem;margin-bottom:0.2rem;font-family:'Syne',sans-serif}
+.award-sub{font-size:0.78rem;color:var(--muted2);line-height:1.5}
+
+/* CERTS */
+.certs-list{display:flex;flex-direction:column;gap:0.75rem}
+.cert-row{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1rem 1.3rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.cert-name{font-size:0.88rem;font-weight:500}
+.cert-issuer{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted2);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:0.2rem 0.6rem;white-space:nowrap}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.contact-links{display:flex;flex-direction:column;gap:1rem;margin-top:1rem}
+.contact-link{display:flex;align-items:center;gap:1rem;padding:1rem 1.3rem;background:var(--surface);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:var(--text);transition:border-color 0.2s}
+.contact-link:hover{border-color:var(--muted2)}
+.contact-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.contact-info{display:flex;flex-direction:column}
+.contact-label{font-size:0.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-family:'DM Mono',monospace}
+.contact-val{font-size:0.9rem;font-weight:500}
+.terminal{background:#050508;border:1px solid var(--border);border-radius:12px;padding:1.5rem;font-family:'DM Mono',monospace;font-size:0.82rem;line-height:2}
+.t-bar{display:flex;gap:6px;margin-bottom:1rem}
+.t-dot{width:10px;height:10px;border-radius:50%}
+.t-red{background:#ff5f57}.t-yellow{background:#febc2e}.t-green{background:#28c840}
+.t-prompt{color:var(--accent2)}
+.t-cmd{color:var(--text)}
+.t-out{color:var(--muted2)}
+.t-cursor{display:inline-block;width:8px;height:14px;background:var(--accent);animation:blink 1s step-end infinite;vertical-align:-2px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:0.8rem;font-family:'DM Mono',monospace}
+
+/* DIVIDER */
+.divider{height:1px;background:var(--border);max-width:1100px;margin:0 auto}
+
+/* SCROLL PROGRESS */
+#scroll-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:200;width:0%;transition:width 0.1s linear}
+
+/* MOBILE MENU */
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.nav-hamburger span{display:block;width:22px;height:2px;background:var(--muted2);border-radius:2px;transition:all 0.3s}
+.nav-hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-hamburger.open span:nth-child(2){opacity:0}
+.nav-hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:rgba(9,9,15,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);z-index:99;padding:1.5rem 2rem;flex-direction:column;gap:1.2rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--muted2);text-decoration:none;font-family:'DM Mono',monospace;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;padding:0.5rem 0;border-bottom:1px solid var(--border)}
+.mobile-menu a:last-child{border-bottom:none}
+
+/* ACTIVE NAV */
+.nav-links a.active{color:var(--text)}
+
+/* BLOG */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.blog-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color 0.25s,transform 0.25s;text-decoration:none;color:var(--text);display:flex;flex-direction:column}
+.blog-card:hover{border-color:rgba(0,212,170,0.35);transform:translateY(-3px)}
+.blog-card-top{padding:1.8rem 1.8rem 0}
+.blog-tag{display:inline-block;background:rgba(0,212,170,0.1);border:1px solid rgba(0,212,170,0.25);border-radius:4px;padding:0.2rem 0.65rem;font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--accent2);margin-bottom:1rem}
+.blog-title{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:-0.02em;line-height:1.35;margin-bottom:0.75rem}
+.blog-excerpt{font-size:0.85rem;color:var(--muted2);line-height:1.65;margin-bottom:1.2rem}
+.blog-card-footer{padding:1rem 1.8rem;border-top:1px solid var(--border);margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+.blog-date{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted)}
+.blog-read{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--accent2)}
+.blog-soon{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(108,99,255,0.08);border:1px dashed rgba(108,99,255,0.25);border-radius:8px;padding:1.2rem 1.5rem;font-family:'DM Mono',monospace;font-size:0.82rem;color:var(--muted2);margin-top:1rem}
+
+/* TYPING CURSOR in hero */
+.typing-cursor{display:inline-block;width:3px;height:0.85em;background:var(--accent);margin-left:2px;animation:blink 0.9s step-end infinite;vertical-align:baseline;border-radius:1px}
+
+/* STAT DIVIDERS */
+.hero-stats{position:relative}
+.stat-item+.stat-item{padding-left:2.5rem;border-left:1px solid var(--border)}
+
+/* FADE IN */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in.visible{opacity:1;transform:none}
+
+/* BACK TO TOP */
+#back-to-top{position:fixed;bottom:2rem;right:2rem;width:40px;height:40px;background:var(--surface);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.1rem;color:var(--muted2);transition:all 0.2s;opacity:0;pointer-events:none;z-index:90}
+#back-to-top.visible{opacity:1;pointer-events:auto}
+#back-to-top:hover{border-color:var(--muted2);color:var(--text)}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.2rem}
+  .nav-links{display:none}
+  .nav-hamburger{display:flex}
+  .hero{padding:0 1.2rem}
+  section{padding:4rem 1.2rem}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-stats{gap:0;flex-wrap:wrap;row-gap:1.2rem}
+  .stat-item+.stat-item{padding-left:1.5rem}
+  footer{flex-direction:column;gap:0.5rem;padding:1.5rem;text-align:center}
+  #back-to-top{bottom:1.2rem;right:1.2rem}
+}
+</style>
 </head>
-<body class="antialiased">
-    <!-- Preloader -->
-    <div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
-        <div class="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-    </div>
+<body>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white bg-opacity-90 backdrop-blur-md shadow-sm z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold text-gray-900 flex items-center">
-                        <span class="gradient-text">Prasiddha</span>
-                    </a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 transition">Home</a>
-                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 transition">About</a>
-                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600 transition">Skills</a>
-                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 transition">Projects</a>
-                    <a href="#achievements" class="nav-link text-gray-700 hover:text-blue-600 transition">Achievements</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 transition">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
-            <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
-            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
-            <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600 transition">Skills</a>
-            <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600 transition">Projects</a>
-            <a href="#achievements" class="block py-2 text-gray-700 hover:text-blue-600 transition">Achievements</a>
-            <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contact</a>
-        </div>
-    </nav>
+<div id="scroll-progress"></div>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                        Hi, I'm <span class="gradient-text">Prasiddha Mainali</span>
-                    </h1>
-                    <div class="text-xl md:text-2xl mb-6">
-                        <span id="typed" class="font-medium"></span>
-                    </div>
-                    <p class="text-gray-600 mb-8 max-w-lg">
-                        A passionate Nepali high school student specializing in AI, Machine Learning and Entrepreneurship. 
-                        Currently building innovative solutions while preparing for international AI Olympiads.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#contact" class="px-6 py-3 gradient-bg text-white rounded-lg font-medium hover:shadow-lg transition">
-                            Contact Me
-                        </a>
-                        <a href="#projects" class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition">
-                            View Projects
-                        </a>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                        <img src="pfp2.png" 
-                             alt="Prasiddha Mainali" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="relative">
-                    <div class="bg-white p-6 rounded-xl shadow-lg">
-                        <h3 class="text-xl font-bold mb-4">Personal Info</h3>
-                        <div class="space-y-3">
-                            <div class="flex">
-                                <div class="w-32 text-gray-600">Name:</div>
-                                <div class="font-medium">Prasiddha Mainali</div>
-                            </div>
-                            <div class="flex">
-                                <div class="w-32 text-gray-600">Nationality:</div>
-                                <div class="font-medium">Nepali</div>
-                            </div>
-                            <div class="flex">
-                                <div class="w-32 text-gray-600">Location:</div>
-                                <div class="font-medium">Kathmandu, Nepal</div>
-                            </div>
-                            <div class="flex">
-                                <div class="w-32 text-gray-600">Age Group:</div>
-                                <div class="font-medium">Teenager (High School)</div>
-                            </div>
-                            <div class="flex">
-                                <div class="w-32 text-gray-600">Current Grade:</div>
-                                <div class="font-medium">Class 12</div>
-                            </div>
-                            <div class="flex">
-                                <div class="w-32 text-gray-600">Stream:</div>
-                                <div class="font-medium">Computer Science</div>
-                            </div>
-                            <div class="flex">
-                                <div class="w-32 text-gray-600">School:</div>
-                                <div class="font-medium">St. Xavier's College, Maitighar</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="absolute -z-10 -inset-4 bg-gradient-to-r from-blue-100 to-emerald-100 rounded-2xl opacity-70"></div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Goals & Aspirations</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-5 h-5 rounded-full gradient-bg"></div>
-                            </div>
-                            <div class="ml-3">
-                                <p>Prepare for <span class="font-medium">Data Science, Machine Learning</span> and <span class="font-medium">Entrepreneurship</span> as career paths</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-5 h-5 rounded-full gradient-bg"></div>
-                            </div>
-                            <div class="ml-3">
-                                <p>Build some amazing <span class="font-medium">end to end</span> ML projects.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-5 h-5 rounded-full gradient-bg"></div>
-                            </div>
-                            <div class="ml-3">
-                                <p><span class="font-medium">Win NOAI</span> (National Olympiad in Artificial Intelligence) and eventually <span class="font-medium">IOAI</span></p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-5 h-5 rounded-full gradient-bg"></div>
-                            </div>
-                            <div class="ml-3">
-                                <p>Build a solid portfolio through <span class="font-medium">projects, clubs, and certifications</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-xl font-bold mt-8 mb-4">Education</h3>
-                    <div class="relative timeline pl-8">
-                        <div class="relative timeline-item mb-6">
-                            <h4 class="font-bold">St. Xavier's College, Maitighar</h4>
-                            <p class="text-sm text-gray-500 mb-2">2021 - Present</p>
-                            <div class="text-gray-700">
-                                <p>Class 11 GPA: 3.61</p>
-                                <p>Class 12 GPA:     </p>
-                                <p>Trend:3.77 (9) → 3.84 (10) → 3.61 (11)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Skills</span></h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Technical Skills</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Python</span>
-                                <span class="text-gray-600">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">C Programming</span>
-                                <span class="text-gray-600">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">HTML/CSS/JS</span>
-                                <span class="text-gray-600">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Artificial Intelligence</span>
-                                <span class="text-gray-600">50%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">MySQL</span>
-                                <span class="text-gray-600">55%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 55%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Soft Skills</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Leadership</span>
-                                <span class="text-gray-600">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Team Management</span>
-                                <span class="text-gray-600">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Time Management</span>
-                                <span class="text-gray-600">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Public Speaking</span>
-                                <span class="text-gray-600">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Written Communication</span>
-                                <span class="text-gray-600">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12">
-                <h3 class="text-xl font-bold mb-6">Tools & Frameworks</h3>
-                <div class="flex flex-wrap gap-4">
-                    <div class="px-4 py-2 bg-gray-100 rounded-full flex items-center">
-                        <i class="fab fa-python text-blue-600 mr-2"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="px-4 py-2 bg-gray-100 rounded-full flex items-center">
-                        <i class="fas fa-brain text-green-500 mr-2"></i>
-                        <span>ResNet-18</span>
-                    </div>
-                    <div class="px-4 py-2 bg-gray-100 rounded-full flex items-center">
-                        <i class="fab fa-git-alt text-orange-600 mr-2"></i>
-                        <span>Pytorch</span>
-                    </div>
-                    <div class="px-4 py-2 bg-gray-100 rounded-full flex items-center">
-                        <i class="fas fa-server text-purple-600 mr-2"></i>
-                        <span>TensorFlow</span>
-                    </div>
-                    <div class="px-4 py-2 bg-gray-100 rounded-full flex items-center">
-                        <i class="fab fa-google text-blue-500 mr-2"></i>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="px-4 py-2 bg-gray-100 rounded-full flex items-center">
-                        <i class="fas fa-database text-yellow-600 mr-2"></i>
-                        <span>OpenCV</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
-                    <div class="h-48 overflow-hidden">
-                        <img src="naterida.png" 
-                             alt="Naterida Exploration Bot" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                                <i class="fas fa-robot text-blue-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">Naterida – Exploration Bot</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Prototype exploration bot using ESP32, ML, OpenCV, and multiple sensors with intelligent data allocation.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">ESP32</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Machine Learning</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">OpenCV</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
-                    <div class="h-48 overflow-hidden">
-                        <img src="resnet18.png" 
-                             alt="Plant Disease Detector" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3">
-                                <i class="fas fa-leaf text-green-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">ResNet-18 Plant Disease Detector</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Built and trained a ResNet-18 convolutional neural network model for agriculture AI applications.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">CNN</span>
-                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">ResNet-18</span>
-                            <span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Agriculture AI</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
-                    <div class="h-48 overflow-hidden">
-                        <img src="smart chatbot image.png" 
-                             alt="Smart Tutor Chatbot" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-2">
-                            <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center mr-3">
-                                <i class="fas fa-robot text-purple-600"></i>
-                            </div>
-                            <h3 class="text-xl font-bold">Smart Tutor Chatbot (In Progress)</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Personalized AI assistant for school-level questions with Deepseek AI integration.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Flask</span>
-                            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Deepseek</span>
-                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Chatbot</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Achievements</span></h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Clubs & Leadership -->
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Clubs & Leadership Roles</h3>
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-users text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">ECHO Club (Empower, Change, Hope, Optimism)</h4>
-                                    <p class="text-sm text-gray-500 mb-2">Founding Member</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>10 core members across 5 sectors: Tech, Social Service, Environment, Child Welfare, Women Welfare</li>
-                                        <li>Working on interdisciplinary agendas</li>
-                                        <li>Planning impactful campaigns and volunteer onboarding</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-laptop-code text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Computer Club – St. Xavier's</h4>
-                                    <p class="text-sm text-gray-500 mb-2">Social Media Manager</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>Event Management for National Event - Science fest</li>
-                                        <li>Led coordination and team structuring</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-laptop-code text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Darwin(Green) House – Kadambari Academy</h4>
-                                    <p class="text-sm text-gray-500 mb-2">House Captain</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>Led ~500 students, the largest house in school.</li>
-                                        <li>Coordinated a 3-week inter-house sports event, ensuring active participation across competitions.</li>
-                                        <li>Strengthened teamwork and sportsmanship while keeping the house a strong contender for the Best House Award.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-laptop-code text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">The Mindful Readers</h4>
-                                    <p class="text-sm text-gray-500 mb-2">Head Event Conductor</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>Coordinated events promoting reading culture and social awareness.</li>
-                                        <li>Strengthened leadership and collaboration through impact-driven initiatives like conducting a 3 day MUN as the Chair.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-                
-                <!-- Events & Competitions -->
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Events & Competitions</h3>
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-trophy text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Intercollege SciTech Competition – Winner</h4>
-                                    <p class="text-sm text-gray-500 mb-2">1st Place</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>Led a multi-disciplinary team</li>
-                                        <li>Project outperformed peers from other colleges</li>
-                                        <li>Recognized for innovation, execution, and impact</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-microphone text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">International Hackathon – Winner</h4>
-                                    <p class="text-sm text-gray-500 mb-2">1st Place</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>Led a cross-functional team to design, prototype, and present the solution.</li>
-                                        <li>Project stood out for innovation, technical execution, and real-world applicability.</li>
-                                        <li>Outperformed competitors from multiple international teams and universities</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-microphone text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Public Speaking Workshop – Competition Winner</h4>
-                                    <p class="text-sm text-gray-500 mb-2">Winner</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>Participated in intensive workshop on communication</li>
-                                        <li>Won the final speaking competition judged by professionals</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 mt-1">
-                                    <div class="w-6 h-6 rounded-full gradient-bg flex items-center justify-center">
-                                        <i class="fas fa-globe text-white text-xs"></i>
-                                    </div>
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-bold">Model United Nations (MUN)</h4>
-                                    <p class="text-sm text-gray-500 mb-2">Multiple Delegations</p>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>Spain – DISEC Committee: Cybersecurity Threats - Special mention award</li>
-                                        <li>Sweden – UNHRC Committee: Combating Xenophobia - Best delegate award</li>
-                                        <li>USA – DISEC Committee: Jammu and Kashmir - Honorable mention award</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded-full"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Contact Information</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                                    <i class="fas fa-envelope text-blue-600"></i>
-                                </div>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="font-medium">Email</h4>
-                                <p class="text-gray-600">prasiddha.mainali2@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                                    <i class="fas fa-map-marker-alt text-green-600"></i>
-                                </div>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="font-medium">Location</h4>
-                                <p class="text-gray-600">Kathmandu, Nepal</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-                                    <i class="fas fa-university text-purple-600"></i>
-                                </div>
-                            </div>
-                            <div class="ml-4">
-                                <h4 class="font-medium">Education</h4>
-                                <p class="text-gray-600">St. Xavier's College, Maitighar</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-8">
-                        <h3 class="text-xl font-bold mb-6">Connect With Me</h3>
-                        <div class="flex space-x-4">
-                            <a href="https://github.com/LiboniX-2" class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-200 transition" target="_blank">
-                                <i class="fab fa-github text-gray-800 text-xl"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/prasiddha-mainali-105bb0352/" class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-200 transition" target="_blank">
-                                <i class="fab fa-linkedin-in text-blue-700 text-xl"></i>
-                            </a>
-                            <a href="https://www.instagram.com/_.prasiddha_/" class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-200 transition" target="_blank">
-                                <i class="fab fa-instagram text-pink-500 text-xl"></i>
-                            </a>
-                            <a href="https://www.facebook.com/prasiddha.mainali.2025" class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-200 transition" target="_blank">
-                                <i class="fab fa-facebook-f text-blue-600 text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-8 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <a href="#" class="text-xl font-bold flex items-center">
-                        <span class="gradient-text">Prasiddha Mainali</span>
-                    </a>
-                    <p class="text-gray-400 mt-2">AI & Data Science Enthusiast from Nepal</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="#skills" class="text-gray-400 hover:text-white transition">Skills</a>
-                    <a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a>
-                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Prasiddha Mainali. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg hidden items-center justify-center">
-        <i class="fas fa-arrow-up"></i>
+<nav id="navbar">
+  <div class="nav-logo">P<span>.</span>Mainali</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <a href="mailto:prasiddha.mainali2@gmail.com" class="nav-cta">Get in touch →</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
     </button>
+  </div>
+</nav>
 
-    <script>
-        // Preloader
-        window.addEventListener('load', function() {
-            const preloader = document.getElementById('preloader');
-            setTimeout(() => {
-                preloader.style.opacity = '0';
-                setTimeout(() => {
-                    preloader.style.display = 'none';
-                }, 500);
-            }, 500);
-        });
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#achievements" onclick="closeMobile()">Awards</a>
+  <a href="#blog" onclick="closeMobile()">Blog</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+<div id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</div>
 
-        // Typed.js animation
-        document.addEventListener('DOMContentLoaded', function() {
-            const typed = new Typed('#typed', {
-                strings: [
-                    "AI Enthusiast",
-                    "Machine Learning Developer",
-                    "Future Entrepreneur",
-                    "Tech Innovator",
-                    "AI Olympiad Aspirant"
-                ],
-                typeSpeed: 50,
-                backSpeed: 30,
-                loop: true,
-                showCursor: true,
-                cursorChar: '|'
-            });
-        });
+<div class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+  </div>
+  <div class="hero-photo">
+  <div class="hero-photo-ring"></div>
+  <img src="pfp2.png" alt="Prasiddha Mainali" />
+</div>
+  <div class="hero-content fade-in">
+    <div class="hero-tag">Available for opportunities · Kathmandu, Nepal</div>
+    <h1>
+      Prasiddha<br>
+      <span class="line2">Mainali.</span>
+    </h1>
+    <p class="hero-desc"><span id="hero-typing" style="color:var(--accent2);font-family:'DM Mono',monospace;font-size:0.9rem"></span><span class="typing-cursor"></span><br><br>AI & ML practitioner building intelligent systems. CS student at St. Xavier's, Kathmandu — ranked top 6 nationally in AI, hackathon winner, and research award recipient.</p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num accent">#6</span>
+        <span class="stat-label">NOAI '26</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num accent2">$1K</span>
+        <span class="stat-label">Research Grant</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" style="color:#f4b942">2x</span>
+        <span class="stat-label">Hackathon Winner</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" style="color:#ff6496">3.84</span>
+        <span class="stat-label">GPA(Grade 10)</span>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View Projects →</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</div>
 
-        // Scroll Reveal Animation
-        ScrollReveal().reveal('.timeline-item', {
-            delay: 200,
-            distance: '20px',
-            origin: 'left',
-            interval: 100
-        });
+<div class="divider"></div>
 
-        ScrollReveal().reveal('.card-hover', {
-            delay: 200,
-            distance: '20px',
-            origin: 'bottom',
-            interval: 100
-        });
+<section id="about" class="fade-in">
+  <div class="section-label">01 — About</div>
+  <h2 class="section-title">Builder. Researcher.<br>Olympiad Competitor.</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a Class 12 Computer Science student at <strong>St. Xavier's College, Kathmandu</strong>, specializing in AI and machine learning. My work sits at the intersection of research, applied ML, and building real systems.</p>
+      <p>I placed <strong>6th nationally at NOAI '26</strong>, won the <strong>Lumiere Essay Competition</strong> (Excellence Award + $1,000 research grant in Lumiere Research Program) among 2,000+ global competitors, and led my team to win <strong>2 international hackathons</strong>.</p>
+      <p>Currently doing<strong> ML internships simultaneously</strong> — at Softgrow Tech and InternPe — applying Python pipelines and deep learning to real engineering problems.</p>
+      <div class="about-chips">
+        <span class="chip">Machine Learning</span>
+        <span class="chip">Deep Learning</span>
+        <span class="chip">Neural Networks</span>
+        <span class="chip">Computer Vision</span>
+        <span class="chip">Natural Language Processing</span>
+        <span class="chip">Python</span>
+        <span class="chip">Pytorch</span>
+        <span class="chip">Research</span>
+      </div>
+    </div>
+    <div class="about-facts">
+      <div class="fact-card">
+        <div class="fact-icon purple">🎓</div>
+        <div>
+          <div class="fact-label">Education</div>
+          <div class="fact-value">St. Xavier's College, Maitighar · Class 12, CS Stream</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon teal">🏆</div>
+        <div>
+          <div class="fact-label">Top Achievement</div>
+          <div class="fact-value">NOAI '26 — Rank 6 nationally in AI</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon amber">📝</div>
+        <div>
+          <div class="fact-label">Research</div>
+          <div class="fact-value">Lumiere Essay — Excellence Award & $1,000 Grant</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon pink">🤝</div>
+        <div>
+          <div class="fact-label">Community</div>
+          <div class="fact-value">Co-Founded ECHO Club</div>
+        </div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon purple">🌐</div>
+        <div>
+          <div class="fact-label">Languages</div>
+          <div class="fact-value">English · Nepali · Hindi · Bhojpuri</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Back to top button
-        const backToTopButton = document.getElementById('back-to-top');
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('hidden');
-                backToTopButton.classList.add('flex');
-            } else {
-                backToTopButton.classList.add('hidden');
-                backToTopButton.classList.remove('flex');
-            }
-        });
+<div class="divider"></div>
 
-        backToTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+<section id="projects" class="fade-in">
+  <div class="section-label">02 — Projects</div>
+  <h2 class="section-title">What I've Built</h2>
+  <p class="section-sub">Selected projects across ML, computer vision, and robotics.</p>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-num">001</div>
+      <div class="project-title">Naterida — Exploration Bot</div>
+      <p class="project-desc">Autonomous exploration robot built with ESP32, machine learning, OpenCV, and multi-sensor fusion. Designed for intelligent environment mapping with dynamic data allocation.</p>
+      <div class="project-stack">
+        <span class="stack-tag">ESP32</span><span class="stack-tag">OpenCV</span><span class="stack-tag">Machine Learning</span><span class="stack-tag">C++</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/LiboniX-2" target="_blank">↗ GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">002</div>
+      <div class="project-title">Vision-models</div>
+      <p class="project-desc">Collection of CNN and computer vision architectures implemented from scratch and through transfer learning in PyTorch.</p>
+      <div class="project-stack">
+        <span class="stack-tag">PyTorch</span><span class="stack-tag">Transfer Learning</span><span class="stack-tag">CNN</span><span class="stack-tag">Python</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/LiboniX-2/vision-models" target="_blank">↗ GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">003</div>
+      <div class="project-title">EconML</div>
+      <p class="project-desc">A collection of machine learning projects focused on finance and economics, with an emphasis on time series modeling, predictive analytics, and data-driven insights.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Scikit-learn</span><span class="stack-tag">LSTM</span><span class="stack-tag">Time Series Analysis</span><span class="stack-tag">Python</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/LiboniX-2/EconML-Projects" target="_blank">↗ GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">004</div>
+      <div class="project-title">Deep Learning and Neural Networks</div>
+      <p class="project-desc">Hands-on deep learning projects exploring neural networks, image recognition, and sequence modeling built with TensorFlow and Keras.</p>
+      <div class="project-stack">
+        <span class="stack-tag">TensorFlow/Keras</span><span class="stack-tag">Pytorch</span><span class="stack-tag">Deep Learning</span><span class="stack-tag">Python</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/LiboniX-2/Deep-learning-and-Neural-networks" target="_blank">↗ GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">005</div>
+      <div class="project-title">Smart Tutor Chatbot</div>
+      <p class="project-desc">Personalized AI assistant for school-level academic questions, powered by Deepseek AI. Flask backend with intelligent query routing and subject-aware context management.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Flask</span><span class="stack-tag">Deepseek AI</span><span class="stack-tag">Python</span><span class="stack-tag">In Progress</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://github.com/LiboniX-2" target="_blank">↗ GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-num">006</div>
+      <div class="project-title">This Portfolio</div>
+      <p class="project-desc">Fully responsive personal portfolio deployed on Render with CI/CD — built in vanilla HTML/CSS/JS with performance and clean architecture in mind.</p>
+      <div class="project-stack">
+        <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Render</span>
+      </div>
+      <div class="project-links">
+        <a class="project-link" href="https://prasiddha-mainali.onrender.com" target="_blank">↗ Live Site</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
+<div class="divider"></div>
 
-        // Animate skill bars on scroll
-        function animateSkillBars() {
-            const skillBars = document.querySelectorAll('.skill-progress');
-            skillBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 100);
-            });
-        }
+<section id="skills" class="fade-in">
+  <div class="section-label">03 — Skills</div>
+  <h2 class="section-title">Technical Stack</h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="skill-dot purple"></span> AI / ML</div>
+      <div class="skill-list">
+        <div class="skill-item">TensorFlow & Keras</div>
+        <div class="skill-item">PyTorch</div>
+        <div class="skill-item">Scikit-learn</div>
+        <div class="skill-item">OpenCV</div>
+        <div class="skill-item">Neural Networks</div>
+        <div class="skill-item">Computer Vision</div>
+        <div class="skill-item">Natural Language Processing</div>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="skill-dot teal"></span> Development</div>
+      <div class="skill-list">
+        <div class="skill-item">Python</div>
+        <div class="skill-item">JavaScript / HTML / CSS</div>
+        <div class="skill-item">SQL / MySQL</div>
+        <div class="skill-item">Git & GitHub</div>
+        <div class="skill-item">Linux</div>
+        <div class="skill-item">Data Visualization</div>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="skill-dot amber"></span> Data Science</div>
+      <div class="skill-list">
+        <div class="skill-item">Pandas & NumPy</div>
+        <div class="skill-item">Matplotlib</div>
+        <div class="skill-item">Feature Engineering</div>
+        <div class="skill-item">Data Preprocessing</div>
+        <div class="skill-item">Statistical Analysis</div>
+        <div class="skill-item">Predictive Modeling</div>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title"><span class="skill-dot pink"></span> Soft Skills</div>
+      <div class="skill-list">
+        <div class="skill-item">Leadership</div>
+        <div class="skill-item">Time Management</div>
+        <div class="skill-item">Interpersonal Skills</div>
+        <div class="skill-item">Team Management</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Intersection Observer for skill bars
-        const skillsSection = document.getElementById('skills');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateSkillBars();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
+<div class="divider"></div>
 
-        if (skillsSection) {
-            observer.observe(skillsSection);
-        }
-    // 🔹 ADD THIS NEW CODE HERE (Contact form functionality) 🔹
-    // Contact form submission
-    document.addEventListener('DOMContentLoaded', function() {
-        const contactForm = document.querySelector('#contact form');
-        
-        if (contactForm) {
-            contactForm.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                // Get form data
-                const formData = {
-                    name: document.getElementById('name').value.trim(),
-                    email: document.getElementById('email').value.trim(),
-                    subject: document.getElementById('subject').value.trim(),
-                    message: document.getElementById('message').value.trim()
-                };
-                
-                // Basic validation
-                if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-                    showNotification('Please fill in all fields', 'error');
-                    return;
-                }
-                
-                // Email validation
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(formData.email)) {
-                    showNotification('Please enter a valid email address', 'error');
-                    return;
-                }
-                
-                // Show loading state
-                const submitButton = contactForm.querySelector('button[type="submit"]');
-                const originalText = submitButton.textContent;
-                submitButton.textContent = 'Sending...';
-                submitButton.disabled = true;
-                
-                try {
-                    // Send data to backend
-                    const response = await fetch('http://localhost:5000/api/contact', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(formData)
-                    });
-                    
-                    const result = await response.json();
-                    
-                    if (result.success) {
-                        showNotification(result.message, 'success');
-                        contactForm.reset(); // Clear the form
-                    } else {
-                        showNotification(result.message, 'error');
-                    }
-                    
-                } catch (error) {
-                    console.error('Error sending message:', error);
-                    showNotification('Failed to send message. Please try again or contact me directly.', 'error');
-                } finally {
-                    // Reset button state
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                }
-            });
-        }
-    });
+<section id="experience" class="fade-in">
+  <div class="section-label">04 — Experience</div>
+  <h2 class="section-title">Work & Leadership</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">May 2026 — Present</div>
+      <div class="timeline-title">Artificial Intelligence Intern</div>
+      <div class="timeline-org">Softgrow Tech · India</div>
+      <div class="timeline-desc">Applying Python-based ML pipelines and deep learning to real-world engineering problems.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">May 2026 — Present</div>
+      <div class="timeline-title">AI & Machine Learning Intern</div>
+      <div class="timeline-org">InternPe · India</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Developing and evaluating ML models for real-world AI applications.</li>
+          <li>Applying supervised and unsupervised learning to clean, preprocess, and model structured datasets.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2025 — Present</div>
+      <div class="timeline-title">Co-Founder</div>
+      <div class="timeline-org">ECHO Club — St. Xavier's College</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>8 core members across 5 sectors: Tech, Social Service, Environment, Child Welfare, Women Welfare</li>
+          <li>Working on interdisciplinary agendas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">May 2025 — Apr 2026</div>
+      <div class="timeline-title">Social Media Manager</div>
+      <div class="timeline-org">The Computer Club — St. Xavier's College</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>Grew social media engagement by 40% through data-driven content strategy.</li>
+          <li>Designed 30+ posts; led digital campaigns for tech fests and ideathons.</li>
+          <li>Event Management for National Event - Science fest</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2025 — Oct 2025</div>
+      <div class="timeline-title">Head Event Conductor</div>
+      <div class="timeline-org">The Mindful Readers · Kathmandu</div>
+      <div class="timeline-desc">Led coordination of 3-day MUN as Chairperson of UNHRC. Received Internship Achievement Award. Managed 100+ attendees across literary and educational events.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Jan 2023 — Jan 2024</div>
+      <div class="timeline-title">House Captain — Darwin House</div>
+      <div class="timeline-org">Kadambari Academy · Birgunj</div>
+      <div class="timeline-desc">Elected captain of school's largest house (500+ members). Led all inter-house competitions and coordinated a 3-week sports event.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Dec 2021 — Dec 2022</div>
+      <div class="timeline-title">General Member Board — Interact: Rotary Sponsored Club</div>
+      <div class="timeline-org">Kadambari Academy · Birgunj</div>
+      <div class="timeline-desc">I had the opportunity to work as a part of general member board of Interact club of Kadambari.</div>
+    </div>
+  </div>
+</section>
 
-    // Notification system
-    function showNotification(message, type = 'info') {
-        // Remove existing notifications
-        const existingNotifications = document.querySelectorAll('.notification');
-        existingNotifications.forEach(notif => notif.remove());
-        
-        // Create notification element
-        const notification = document.createElement('div');
-        notification.className = `notification notification-${type}`;
-        notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            padding: 15px 20px;
-            border-radius: 8px;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            max-width: 400px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-        `;
-        
-        // Set colors based on type
-        switch(type) {
-            case 'success':
-                notification.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-                break;
-            case 'error':
-                notification.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
-                break;
-            default:
-                notification.style.background = 'linear-gradient(135deg, #3b82f6, #2563eb)';
-        }
-        
-        notification.textContent = message;
-        document.body.appendChild(notification);
-        
-        // Slide in
-        setTimeout(() => {
-            notification.style.transform = 'translateX(0)';
-        }, 100);
-        
-        // Auto remove after 5 seconds
-        setTimeout(() => {
-            notification.style.transform = 'translateX(100%)';
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.remove();
-                }
-            }, 300);
-        }, 5000);
-        
-        // Click to dismiss
-        notification.addEventListener('click', () => {
-            notification.style.transform = 'translateX(100%)';
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.remove();
-                }
-            }, 300);
-        });
+<div class="divider"></div>
+
+<section id="achievements" class="fade-in">
+  <div class="section-label">05 — Achievements</div>
+  <h2 class="section-title">Awards & Recognition</h2>
+  <p class="section-sub">Competitions, olympiads, and recognitions earned.</p>
+  <div class="awards-grid">
+    <div class="award-card">
+      <div class="award-medal">🏆</div>
+      <div>
+        <div class="award-title">NOAI '26 — Rank 6</div>
+        <div class="award-sub">National Olympiad in Artificial Intelligence — selected among top national participants for advanced ML proficiency.</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-medal">🥇</div>
+      <div>
+        <div class="award-title">FusionHacks — 1st Place</div>
+        <div class="award-sub">Led team to build an AI-powered solution at this international hackathon, beating competitors worldwide.</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-medal">📜</div>
+      <div>
+        <div class="award-title">Lumiere Essay — $1,000 Grant</div>
+        <div class="award-sub">Excellence Award for outstanding academic research on Prompt " In the new age of Generative AI, what are the most important impacts on education? " and writing among 2,000+ global competitors.</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-medal">🥇</div>
+      <div>
+        <div class="award-title">FounderForge — Winner</div>
+        <div class="award-sub">International hackathon winner — recognized for entrepreneurial innovation and technical execution.</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-medal">🤖</div>
+      <div>
+        <div class="award-title">Robotics and SciTech competition achievements</div>
+        <div class="award-sub">Designed and programmed an autonomous robot for complex tasks. Outperformed all competing college teams ultimately winning twice and stooding second once.</div>
+      </div>
+    </div>
+    <div class="award-card">
+      <div class="award-medal">🎙️</div>
+      <div>
+        <div class="award-title">MUN Chairperson — UNHRC</div>
+        <div class="award-sub">Recognized due to multiple awards in MUN as delegate. Chaired the UN Human Rights Council at a 3-day MUN conference. </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:3rem">
+    <div class="section-label" style="margin-bottom:1.5rem">Certifications</div>
+    <div class="certs-list">
+      <div class="cert-row">
+        <span class="cert-name">Machine Learning Specialization</span>
+        <span class="cert-issuer">Coursera / Stanford · Andrew Ng</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Machine Learning with Python</span>
+        <span class="cert-issuer">FreeCodeCamp</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Data Manipulation with Python</span>
+        <span class="cert-issuer">Udemy</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Introduction to Programming Using Python</span>
+        <span class="cert-issuer">CS50</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="contact" class="fade-in">
+  <div class="section-label">06 — Contact</div>
+  <h2 class="section-title">Let's Connect</h2>
+  <div class="contact-grid">
+    <div>
+      <p style="color:var(--muted2);line-height:1.8;margin-bottom:2rem">Open to research collaborations, ML projects, internships, and interesting conversations about AI. Based in Kathmandu — available globally.</p>
+      <div class="contact-links">
+        <a href="mailto:prasiddha.mainali2@gmail.com" class="contact-link">
+          <div class="contact-icon" style="background:rgba(108,99,255,0.1)">📧</div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-val">prasiddha.mainali2@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/prasiddha-mainali-105bb0352/" target="_blank" class="contact-link">
+          <div class="contact-icon" style="background:rgba(0,212,170,0.1)">💼</div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-val">prasiddha-mainali</span>
+          </div>
+        </a>
+        <a href="https://github.com/LiboniX-2" target="_blank" class="contact-link">
+          <div class="contact-icon" style="background:rgba(244,185,66,0.1)">💻</div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-val">LiboniX-2</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/_.prasiddha_/" target="_blank" class="contact-link">
+          <div class="contact-icon" style="background:rgba(255,100,150,0.1)">📷</div>
+          <div class="contact-info">
+            <span class="contact-label">Instagram</span>
+            <span class="contact-val">_.prasiddha_</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="terminal">
+      <div class="t-bar">
+        <div class="t-dot t-red"></div>
+        <div class="t-dot t-yellow"></div>
+        <div class="t-dot t-green"></div>
+      </div>
+      <div><span class="t-prompt">prasiddha@kth</span><span class="t-cmd"> ~ % whoami</span></div>
+      <div class="t-out">AI researcher &amp; builder from Nepal</div>
+      <div><span class="t-prompt">prasiddha@kth</span><span class="t-cmd"> ~ % cat interests.txt</span></div>
+      <div class="t-out">→ Machine Learning &amp; Deep Learning</div>
+      <div class="t-out">→ Computer Vision</div>
+      <div class="t-out">→ AI Olympiads (NOAI → IOAI)</div>
+      <div class="t-out">→ Research &amp; Scientific Writing</div>
+      <div><span class="t-prompt">prasiddha@kth</span><span class="t-cmd"> ~ % echo $STATUS</span></div>
+      <div class="t-out" style="color:#00d4aa">Open to internships &amp; research collab</div>
+      <div><span class="t-prompt">prasiddha@kth</span><span class="t-cmd"> ~ % <span class="t-cursor"></span></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="blog" class="fade-in">
+  <div class="section-label">07 — Blog</div>
+  <h2 class="section-title">Writing & Thinking</h2>
+  <p class="section-sub">Notes on AI, research, olympiad prep, and building things.</p>
+  <div class="blog-grid">
+    <a class="blog-card" href="blogs/noai-preparation.html">
+      <div class="blog-card-top">
+        <span class="blog-tag">Machine Learning</span>
+        <div class="blog-title">How I Prepared for NOAI '26 and Placed Top 6 Nationally</div>
+        <div class="blog-excerpt">A breakdown of my 6-month preparation strategy — resources, practice problems, mindset, and what I'd do differently if I started again.</div>
+      </div>
+      <div class="blog-card-footer">
+        <span class="blog-date">May 11, 2026</span>
+        <span class="blog-read">↗ Read</span>
+      </div>
+    </a>
+    <a class="blog-card" href="blogs/lumiere-grant.html">
+      <div class="blog-card-top">
+        <span class="blog-tag">Research</span>
+        <div class="blog-title">Winning a $1,000 Research Grant at the Lumiere Essay Competition</div>
+        <div class="blog-excerpt">What I wrote about, how I structured a competitive research essay, and lessons from competing against 2,000+ students globally.</div>
+      </div>
+      <div class="blog-card-footer">
+        <span class="blog-date">May 21, 2026</span>
+        <span class="blog-read">↗ Read</span>
+      </div>
+    </a>
+    <a class="blog-card" href="#blog">
+      <div class="blog-card-top">
+        <span class="blog-tag">Project</span>
+        <div class="blog-title">Building Naterida: An Autonomous Exploration Bot with ESP32 + ML</div>
+        <div class="blog-excerpt">The full engineering story behind Naterida — sensor fusion, embedded ML, and what broke during every demo.</div>
+      </div>
+      <div class="blog-card-footer">
+        <span class="blog-date">Coming soon</span>
+        <span class="blog-read">↗ Read</span>
+      </div>
+    </a>
+  </div>
+  <div class="blog-soon">
+    ✍️ &nbsp; To view Full blog <a href="blogs.html" target="_blank" style="color:var(--accent2);text-decoration:none">click here</a> 
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<footer>
+  <div class="footer-logo">Prasiddha Mainali</div>
+  <div style="display:flex;gap:1.5rem">
+    <a href="https://github.com/LiboniX-2" target="_blank" style="color:var(--muted);text-decoration:none;font-size:0.75rem;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">GitHub</a>
+    <a href="https://www.linkedin.com/in/prasiddha-mainali-105bb0352/" target="_blank" style="color:var(--muted);text-decoration:none;font-size:0.75rem;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">LinkedIn</a>
+    <a href="mailto:prasiddha.mainali2@gmail.com" style="color:var(--muted);text-decoration:none;font-size:0.75rem;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">Email</a>
+  </div>
+  <div>© 2025 · Kathmandu, Nepal</div>
+</footer>
+
+<script>
+// Fade in on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
+}, {threshold: 0.08});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Scroll progress bar
+const prog = document.getElementById('scroll-progress');
+const btt = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  prog.style.width = (scrolled / total * 100) + '%';
+  btt.classList.toggle('visible', scrolled > 400);
+
+  // Active nav link
+  const sections = ['about','projects','skills','experience','achievements','blog','contact'];
+  let current = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= 120) current = id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}, {passive: true});
+
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+function closeMobile() {
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+}
+
+// Typing animation in hero
+const phrases = ['AI Researcher', 'ML Practitioner', 'Systems Builder', 'Olympiad Competitor'];
+let pi = 0, ci = 0, deleting = false;
+const target = document.getElementById('hero-typing');
+if(target) {
+  function type() {
+    const phrase = phrases[pi];
+    if(!deleting) {
+      target.textContent = phrase.slice(0, ci + 1);
+      ci++;
+      if(ci === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
+    } else {
+      target.textContent = phrase.slice(0, ci - 1);
+      ci--;
+      if(ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
     }
-
-    </script>
+    setTimeout(type, deleting ? 45 : 85);
+  }
+  type();
+}
+</script>
 </body>
 </html>
-
-
-
-
