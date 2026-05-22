@@ -5,7 +5,8 @@ This is my personal portfolio website designed to showcase my work, skills, and 
 ## 📌 Features
 - Projects with live previews and source code links  
 - Skills section with tools and technologies I use  
-- Resume/CV downloadable section  
+- Resume/CV section
+- Blog/articles section  
 - Club involvement and leadership roles  
 - Contact form and social media links  
 
@@ -17,8 +18,7 @@ This is my personal portfolio website designed to showcase my work, skills, and 
 - Showcasing diverse roles from one platform
 - Effective personal branding through design and content
 
-## 🚀 Future Plans
-- Add blog/articles section  
+## 🚀 Future Plans 
 - Integrate project filters and search  
 - Include animations and better responsiveness
 
